@@ -22,7 +22,7 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
     constructor() ERC20("Degen", "DGN") Ownable(msg.sender) {
         _addFeature(1, "jetfly", 99);
         _addFeature(2, "jetrun", 299);
-        _addFeature(3, "Jetswim", 499); // New Feature added
+        _addFeature(3, "Jetswim", 499); 
     }
 
     function mint(address to, uint256 amount) external onlyOwner {
